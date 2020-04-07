@@ -1,0 +1,21 @@
+{
+  "name": "internal",
+  "version": "1.0.0",
+  "description": "我在家内部管理系统",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ali-oss": "5.2.0",
+    "jsonwebtoken": "8.2.1",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
+    "mongoose": "^5.0.11",
+    "path": "^0.12.7",
+    "pm2": "^2.10.4",
+    "xss": "^0.3.8"
+  }
+}

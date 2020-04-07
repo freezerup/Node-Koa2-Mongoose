@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="appointment-lists" wx:if="{{appointments.length}}">
+    <view class="appointment" wx:for="{{appointments}}" wx:key="{{item._id}}">
+      <side-slip id="{{item._id}}" limit="{{limit}}" del binddel="doDel" delText="结束">
+        <view class="appointment-person">
+          <image src="{{item.icon || 'https://pic.wozaijia.com/h5-static/img/user_default_logo.png'}}" mode="widthFix"></image>
+          <view class="person">
+            <view>{{item.appointment_name}}</view>
+            <view>{{item.appointment_mobile}}</view>
+            <image src="/images/phone.png" bindtap='handlePhoneCall' data-phone="{{item.appointment_mobile}}"></image>
+          </view>
+        </view>
+        <view class="appointment-message">
+          <text>时间:{{item.appointmentDay}} {{item.appointmentTime}}</text>
+          <text>人数:{{item.appointment_number}}</text>
+          <view class="origin" wx:if="{{item.origin.length}}">{{item.origin}}</view>
+        </view>
+      </side-slip>
+    </view>
+  </view>
+  <view wx:else>该会议室暂无预约</view>
+</view>

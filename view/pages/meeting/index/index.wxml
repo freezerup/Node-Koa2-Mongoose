@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="meeting-lists">
+    <view class="meeting" wx:for="{{meetings}}" wx:key="{{item._id}}" data-id="{{item._id}}" data-title="{{item.name}}" bindtap='handleDetail'>
+      <view class="img">
+        <image src="{{item.icon}}" />
+        <!-- <view class="tag" wx:if="{{item.status && item.appointment_list.length}}">使用中</view> -->
+      </view>
+      <view class="des">
+        <view class="name">{{item.name}}</view>
+        <view class="position">位置:{{item.position}}</view>
+        <view class="equipment">设备:{{item.equipment}}</view>
+        <view class="capacity">容量:{{item.capacity}}</view>
+      </view>
+    </view>
+  </view>
+</view>

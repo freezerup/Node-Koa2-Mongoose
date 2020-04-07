@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="login-wrapper">
+    <view class="title">欢迎使用</view>
+    <view class="logo"></view>
+    <view class="from">
+      <input type="number" bindblur="getMobile" placeholder='填写手机号'></input>
+      <input type='text' bindblur="getPassword" placeholder='填写密码'></input>
+    </view>
+    <button open-type="getUserInfo" bindtap='handleLogin'>进入</button> 
+  </view>
+</view>

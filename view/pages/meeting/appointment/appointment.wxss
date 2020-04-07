@@ -1,0 +1,73 @@
+.container {
+  height: 100%;
+  background: #fafafa;
+}
+ .appointment-from {
+  margin-top: 30rpx;
+}
+.from-wrap {
+   padding: 0 20rpx; 
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.appoint {
+  padding: 0 60rpx 0 24rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ececec;
+}
+.txt {
+  flex: 0 0 200rpx;
+  color: #63666b;
+  font-size: 36rpx;
+}
+.appoint>view {
+  flex: 1;
+  text-align: right;
+  color: #828282;
+  font-size: 24rpx;
+}
+.picker-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.appoint-prompt {
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  color: #828282;
+}
+.title {
+  padding-top: 40rpx;
+  margin-bottom: 20rpx;
+  font-size: 50rpx;
+  color: #000;
+  font-weight: 700;
+}
+.select-date {
+  text-align: center;
+}
+.slider {
+  padding: 20rpx 0;
+}
+
+.origin {
+  width: 100%;
+  background: #fff;
+  min-height: 40rpx;
+  border: 1px solid #ececec;
+}
+.appointment-meeting {
+  height: 80rpx;
+  width: 400rpx;
+  margin: 30rpx auto;
+  text-align: center;
+  background-color: #ff5411;
+  color: #fff;
+  font-size: 34rpx;
+  line-height: 80rpx;
+  border-radius: 80rpx;
+}

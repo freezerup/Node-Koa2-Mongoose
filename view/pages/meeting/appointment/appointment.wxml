@@ -1,0 +1,48 @@
+<view class="container">
+  <view class="appointment-from">
+    <view class="from-wrap">
+      <view class="title">预约时间</view>
+      <view class="appoint">
+        <text class="txt">日期</text>
+        <view>
+          <picker bindchange="bindDateChange" value="{{index}}" range="{{days}}">
+            <view class="picker">
+              {{appointmentDate}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="appoint">
+        <text class="txt">时间</text>
+        <view class="picker-time">
+          <picker mode="time" value="{{time}}" start="09:01" disabled="{{pickerTimeDisabled}}" end="22:01" bindchange="bindStartTimeChange">
+            <view class="picker">
+              {{appointmentTimeStart}}
+            </view>
+          </picker>
+          <view>-</view>
+          <picker mode="time" value="{{time}}" start="09:01" end="22:01" disabled="{{pickerTimeDisabled}}" bindchange="bindEndTimeChange">
+            <view class="picker">
+              {{appointmentTimeEnd}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view wx:if="{{timeSlot.length}}" class="appoint-prompt">
+        <view>提示：已被预约时间段</view>
+        <view>{{timeSlot}}</view>
+      </view>
+    </view>
+    <view class="from-wrap">
+      <view class="title">使用人数</view>
+      <view class="slider">
+        <slider bindchange="bindNumChange" activeColor="#ff5411" min="2" max="200" show-value/>
+      </view>
+    </view>
+    <view class="from-wrap">
+      <view class="title">备注</view>
+      <textarea class="origin" bindblur="bindTextAreaBlur" placeholder="预约原因;其他特殊需求" />
+    </view>
+  </view>
+  <view bindtap='handleAppointment' class="appointment-meeting">预约</view>
+</view>

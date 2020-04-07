@@ -1,0 +1,38 @@
+.meeting-lists {
+  background: #fafafa;
+}
+.meeting {
+  display: flex;
+  flex-direction: row;
+  height: 200rpx;
+  margin: 20rpx 20rpx 0 20rpx;
+  background: #fff;
+}
+.img {
+  position: relative;
+  flex: 0 0 200rpx;
+  height: 200rpx;
+}
+.img>image {
+  height: 100%;
+  width: 100%;
+}
+.img>.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100rpx;
+  background: #ff5411;
+  color: #fff;
+  font-size: 20rpx;
+  text-align: center;
+}
+.des {
+  flex: 1;
+  margin-left: 20rpx;
+  padding: 10rpx 0;
+}
+.position,.equipment,.capacity {
+  font-size: 32rpx;
+  color: #92969C;
+}

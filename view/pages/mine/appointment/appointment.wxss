@@ -1,0 +1,55 @@
+.container {
+  height: 100%;
+  background: #fafafa;
+} 
+.appointment-lists {
+  margin-top: 20rpx;
+  padding-bottom: 140rpx
+}
+.appointment {
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  background: #fff;
+}
+.appointment-person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+}
+.appointment-person>image {
+  flex: 0 0 100rpx;
+  height: 100%;
+  width: 100%;
+}
+.person {
+  flex: 1;
+  position: relative;
+  margin-left: 20rpx;
+}
+.person>view {
+  font-size: 30rpx;
+}
+.person>image {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+.appointment-message {
+  margin-top: 28rpx;
+  font-size: 28rpx;
+  color: #828282;
+}
+.appointment-message>text {
+  margin-right: 30rpx;
+}
+.appointment-message>view {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: keep-all;
+  max-width: 100%;
+}
+

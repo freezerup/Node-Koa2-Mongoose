@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="functions-lists" wx:if="{{functions.length}}">
+    <view class="list" wx:for="{{functions}}" bindtap="handleDetail" wx:key="_id" data-type="{{item.type}}">
+      <image src="{{item.icon}}" mode="widthFix"/>
+      <text>{{item.name}}</text>
+    </view>
+    <view class="list">
+      <image src="https://pic.wozaijia.com/upload/xcx/developing.jpg"></image>
+      <text>正在开发中...</text>
+    </view>
+  </view>
+</view>
